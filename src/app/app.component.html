@@ -1,0 +1,21 @@
+<h1>CAJA CUSCO</h1>
+
+<p>{{title}}</p>
+
+<h2>TABLE</h2>
+<table>
+    <tbody>
+        <TR *ngFor='let obj of employee_list'>
+            <TD>{{obj.emplotee_age}}</TD>
+            <TD>{{obj.employee_name}}</TD>
+        </TR>
+    </tbody>
+</table>
+
+<h2>BOTON</h2>
+<div>
+    <form action="">
+        <input placeholder="ingrese dni:" name="dni" [(ngModel)]="request.dni" />
+        <button (click)="send()"> Enviar ... </button>
+    </form>
+</div>
